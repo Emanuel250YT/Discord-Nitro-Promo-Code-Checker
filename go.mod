@@ -1,4 +1,4 @@
-module invitechecker
+module promoChecker
 
 go 1.17
 

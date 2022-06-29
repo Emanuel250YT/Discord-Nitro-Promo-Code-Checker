@@ -92,7 +92,7 @@ func threadingManager(tokens []string, proxies []string) {
 	for i := 0; i < threads; i++ {
 		go func(i int) {
 			defer threadManager.Done()
-			fmt.Fprintln(color.Output, cyan("[", currentTime(), "] Thread #"+fmt.Sprint(i+1)+": Started"))
+			fmt.Fprintln(color.Output, cyan("[", currentTime(), "] Thread #"+fmt.Sprint(i+1)+": Started!"))
 			thread(i, threadWorks[i], proxies)
 		}(i)
 	}
